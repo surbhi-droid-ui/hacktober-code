@@ -20,6 +20,20 @@ def test_odd_even(i):
 sols=0
 low,high=map(int, input().split())
 k=int(input())
+array=[]                      ////////////recursive
+getting_ready(array)
+combination=itertools.product(array, repeat=k)
+for idx in combination:
+    if(test_odd_even(idx)):
+      gh=map(int, input().split())
+k=int(input())
+array=[]
+getting_ready(array)
+combination=itertools.product(array, repeat=k)
+for idx in combination:
+    if(test_odd_even(idx)):
+      gh=map(int, input().split())
+k=int(input())
 array=[]
 getting_ready(array)
 combination=itertools.product(array, repeat=k)
